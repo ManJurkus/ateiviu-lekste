@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "dead-server --host=localhost --port=4401",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "dead-server --host=localhost --port=4401 --browser=chrome",
+    "test": "dead-server --browser=chrome.exe"
   },
   "keywords": [],
   "author": "Mantas",
   "license": "BIT",
   "devDependencies": {
     "dead-server": "^1.0.9"
+  },
+  "dependencies": {
+    "chrome": "^0.1.0",
+    "set-default-browser": "chrome.exe"
   }
 }
